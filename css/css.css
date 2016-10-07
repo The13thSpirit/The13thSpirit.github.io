@@ -1,0 +1,198 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #8B3C06;
+  font-family: "Times New Roman", serif;
+  color: #fff;
+}
+
+#hero {
+  height: 1200px;
+ /*
+  min-height: 1200px;
+*/
+  overflow: hidden;
+  position: relative;
+}
+
+/*
+#hero, .layer {
+  min-height: 1200px;
+}
+*/
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1200px;
+/*
+  min-height: 1200px;
+*/
+  /*
+  max-width: 100%;
+  height:auto
+  */
+  position: fixed;
+  z-index: -1;
+}
+
+.mobileIndex {
+  background: url("../images/mobile_index.jpg") no-repeat center bottom/cover;
+}
+
+.mobileAbout {
+  background: url("../images/mobile_about.jpg") no-repeat center bottom/cover;
+}
+
+.mobileContacts {
+    background: url("../images/mobile_contacts.jpg") no-repeat center bottom/cover;
+}
+
+#hero-mobile {
+  display: none;
+  height: 320px;
+}
+
+#contacts, #about {
+  display: none;
+}
+
+section {
+  padding: 50px 0 20px 0;
+}
+/*
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+*/
+#layer-bg.index {
+  background-image: url("../images/background_index.jpg");
+}
+#layer-1.index {
+  background-image: url("../images/burningMan.png");
+}
+#layer-2.index {
+  background-image: url("../images/close_fire.png");
+}
+/*
+#layer-1.index {
+  background-image: url("../images/burningMan_smaller.png");
+  background-position: bottom left;
+}
+*/
+
+
+#layer-bg.about {
+  background-image: url("../images/background_about.jpg");
+}
+#layer-1.about {
+  display: none;
+}
+#layer-2.about {
+  background-image: url("../images/layer2_about.png");
+}
+/*
+#layer-2.about {
+  background-image: url("../images/layer2_old.png");
+}
+*/
+
+#layer-bg.contacts {
+  background-image: url("../images/background_contacts.jpg");
+}
+#layer-1.contacts {
+  display: none;
+}
+#layer-2.contacts {
+  background-image: url("../images/close_fire_contacts.png");
+}
+
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 11;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+/*
+justify-content: flex-start;
+*/
+}
+
+.logo {
+  width: 100px;
+/*
+  order: -1;
+  */
+}
+
+div.mainMenu {
+/*
+  display: block;
+*/
+  margin: 15px, 0px;
+}
+
+.mainMenu {
+  color: rgb(255, 121, 9);
+  font-size: 15px;
+}
+
+a.mainMenu:visited, a.mainMenu:focus {
+  color: rgb(255, 121, 9);
+  text-decoration: none solid;
+
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-propertyopacitytransition-timing-function: ease;
+}
+
+a.mainMenu:hover, a.mainMenu:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none solid;
+
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-propertyopacitytransition-timing-function: ease;
+}
+
+#content {
+  background-color: #8B3C06;
+}
+
+h1 {
+
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 150%;
+  margin: 5px;
+}
+
+img.img-responsive {
+  margin: 5px;
+}
