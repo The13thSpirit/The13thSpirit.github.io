@@ -1,3 +1,32 @@
+/*Resize or scale*/
+var firstHeroHeight;
+if (document.getElementById("hero").clientHeight) {
+  firstHeroHeight = document.getElementById("hero").clientHeight;
+} else {
+  firstHeroHeight = 1200;
+};
+var resize = function(e){
+  //how we will resize e
+  var i, layers, scaleMeasure = (document.documentElement.offsetWidth) / 1920;
+  console.log(scaleMeasure);
+  layers = document.getElementsByClassName(e);
+  for (var i = 0; i < layers.length; i++) {
+    layers[i].style.height = firstHeroHeight * scaleMeasure + "px";
+  };
+};
+(function(){
+  var time;
+  window.onresize = function(){
+    if (time)
+      clearTimeout(time);
+    time = setTimeout(function(){
+      resize("layer");
+    },20);
+};
+})();
+window.onload = resize("layer");
+
+/*Parallax*/
 (function() {
   window.addEventListener('scroll', function(event) {
     var depth, i, layer, layers, len, movement, topDistance, translate3d;
@@ -15,7 +44,6 @@
       layer.style.transform = translate3d;
     }
   });
-
 }).call(this);
 
 function renderSection(sectionId) {

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--  <link rel="stylesheet" type="text/css" href="./css/normalize.css" defer>-->
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" defer>
   <link rel="stylesheet" type="text/css" href="./css/css.css" defer>
 <!--    <script src="./js/jquery-3.1.1.js" defer></script>-->
 <!--    <script src="./js/bootstrap.js" defer></script>-->
 	<title>Tech Crew site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
   <header>
@@ -22,7 +27,7 @@
       <a class="mainMenu" href="#contactsTechCrew" onclick="renderSection('contacts')"><h1>Контакты</h1></a>
     </div>
   </header>
-<div id="hero">
+<div class="layer" id="hero">
   <div class="index layer" id="layer-bg" data-depth="0.10" data-type="parallax"></div>
   <div class="index layer" id="layer-1" data-depth="0.50" data-type="parallax"></div>
   <div class="index layer" id="layer-2" data-depth="1.00" data-type="parallax"></div>
@@ -65,45 +70,30 @@
     </section>
     <section id="about">
       <div class="row">
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-10">
+        <div class="col-sm-10 col-sm-offset-1">
           <h1>О нас</h1>
           <h2>Творческое объединение "Tech Crew"</h2>
           <img class="img-responsive" src="./images/about07.jpg" alt="here we are">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptatem, nihil impedit, cum officia, dolorem repellendus nam debitis doloremque, velit explicabo atque optio. Quo reiciendis rem minus illo eaque? Eius qui sed nihil in, maiores laborum eligendi porro mollitia beatae. Dolorum cupiditate voluptates sequi unde, magni possimus. Numquam ad, maiores?</p>
         </div>
-        <div class="col-sm-1">
-        </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
-        </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-sm-offset-3">
           <h2>Основатель и идейный вдохновитель:</h2>
           <h2>Константин Мельник</h2>
           <img class="img-responsive" src="./images/about04.jpg" alt="RIP">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptatem, nihil impedit, cum officia, dolorem repellendus nam debitis doloremque, velit explicabo atque optio. Quo reiciendis rem minus illo eaque? Eius qui sed nihil in, maiores laborum eligendi porro mollitia beatae. Dolorum cupiditate voluptates sequi unde, magni possimus. Numquam ad, maiores?</p>
         </div>
-        <div class="col-sm-3">
-        </div>
       </div>
       <div class="row">
-         <div class="col-sm-1">
-         </div>
-         <div class="col-sm-10">
+         <div class="col-sm-10 col-sm-offset-1">
           <img class="img-responsive" src="./images/about02.jpg" alt="">
-         </div>
-         <div class="col-sm-1">
          </div>
       </div>
     </section>
     <section id="contacts">
       <div class="row">
-        <div class="col-sm-3">
-          <p></p>
-        </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-sm-offset-3">
           <h1>Контакты</h1>
           <h2>Творческое объединение "Tech Crew"</h2>
           <p>г. Харьков
@@ -123,35 +113,22 @@
             email@ukr.net
           </p>
         </div>
-        <div class="col-sm-3">
-          <p></p>
-        </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
-          <p></p>
-        </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-sm-offset-3">
           <img class="img-responsive" src="./images/contacts4.jpg" alt="Car">
         </div>
-        <div class="col-sm-3">
-          <p></p>
-        </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
-          <p></p>
-        </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-sm-offset-3">
           <img class="img-responsive" src="./images/contacts3.jpg" alt="Relaxation">
-        </div>
-        <div class="col-sm-3">
-          <p></p>
         </div>
       </div>
     </section>
   </div>
 </div>
 </body>
+<script src="./js/jquery-3.1.1.js" defer></script>
+<script src="./js/bootstrap.js" defer></script>
 <script src="./js/js.js" defer></script>
 </html>
