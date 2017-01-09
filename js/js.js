@@ -25,7 +25,6 @@ var resize = function(e){
 };
 })();
 window.onload = resize("layer");
-
 /*Parallax*/
 (function() {
   window.addEventListener('scroll', function(event) {
